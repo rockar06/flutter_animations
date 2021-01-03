@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animations_app/animations/curved_animation_sample.dart';
+
+const animationList = ['Curved Animation'];
 
 void main() {
   runApp(MyApp());
@@ -29,14 +32,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,24 +39,31 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-          ],
+        child: ListView.builder(
+          itemCount: animationList.length,
+          itemBuilder: (_, index) {
+            return ListTile(
+              title: Text(animationList[index]),
+              onTap: () {
+                _goToAnimationScreen(index);
+              },
+            );
+          },
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ),
+    );
+  }
+
+  void _goToAnimationScreen(int index) {
+    Widget nextWidget;
+    switch (index) {
+      case 0:
+        nextWidget = CurvedAnimationSample();
+        break;
+    }
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => nextWidget),
     );
   }
 }
