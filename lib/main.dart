@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animations_app/animations/animated_align_sample.dart';
 import 'package:flutter_animations_app/animations/curved_animation_sample.dart';
 
-const animationList = ['Curved Animation'];
+const animationList = ['Curved Animation', 'Animated Align'];
 
 void main() {
   runApp(MyApp());
@@ -59,6 +60,9 @@ class _MyHomePageState extends State<MyHomePage> {
     switch (index) {
       case 0:
         nextWidget = CurvedAnimationSample();
+        break;
+      case 1:
+        nextWidget = AnimatedAlignSample();
         break;
     }
     Navigator.push(
