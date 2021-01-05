@@ -3,12 +3,12 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 /// Reference for curves animations https://api.flutter.dev/flutter/animation/Curves-class.html
-class CurvedAnimationSample extends StatefulWidget {
+class AnimatedContainerSample extends StatefulWidget {
   @override
-  _CurvedAnimationSampleState createState() => _CurvedAnimationSampleState();
+  _AnimatedContainerSampleState createState() => _AnimatedContainerSampleState();
 }
 
-class _CurvedAnimationSampleState extends State<CurvedAnimationSample> {
+class _AnimatedContainerSampleState extends State<AnimatedContainerSample> {
   final _duration = Duration(seconds: 1);
   final _random = Random();
   double _width = 50;

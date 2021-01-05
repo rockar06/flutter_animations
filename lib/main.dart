@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animations_app/animations/animated_align_sample.dart';
-import 'package:flutter_animations_app/animations/curved_animation_sample.dart';
+import 'package:flutter_animations_app/animations/animated_container_sample.dart';
 
 const animationList = ['Curved Animation', 'Animated Align'];
 
@@ -9,7 +9,6 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -59,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
     Widget nextWidget;
     switch (index) {
       case 0:
-        nextWidget = CurvedAnimationSample();
+        nextWidget = AnimatedContainerSample();
         break;
       case 1:
         nextWidget = AnimatedAlignSample();
