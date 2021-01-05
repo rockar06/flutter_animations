@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animations_app/animations/animated_align_sample.dart';
+import 'package:flutter_animations_app/animations/animated_builder_sample.dart';
 import 'package:flutter_animations_app/animations/animated_container_sample.dart';
 
-const animationList = ['Curved Animation', 'Animated Align'];
+const animationList = ['Curved Animation', 'Animated Align', 'Animated Builder'];
 
 void main() {
   runApp(MyApp());
@@ -62,6 +63,9 @@ class _MyHomePageState extends State<MyHomePage> {
         break;
       case 1:
         nextWidget = AnimatedAlignSample();
+        break;
+      case 2:
+        nextWidget = AnimatedBuilderSample();
         break;
     }
     Navigator.push(

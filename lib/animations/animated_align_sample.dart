@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animations_app/utils/sample_container.dart';
 
 class AnimatedAlignSample extends StatefulWidget {
   @override
@@ -9,8 +10,6 @@ class _AnimatedAlignSampleState extends State<AnimatedAlignSample> {
   final _duration = Duration(milliseconds: 500);
   final double _width = 75;
   final double _height = 75;
-  final Color _color = Colors.blue;
-  final BorderRadiusGeometry _borderRadius = BorderRadius.circular(8.0);
   Alignment _alignment = Alignment.topRight;
 
   @override
@@ -26,19 +25,9 @@ class _AnimatedAlignSampleState extends State<AnimatedAlignSample> {
             alignment: _alignment,
             curve: Curves.easeInOutBack,
             duration: _duration,
-            child: Container(
-              height: _height,
-              width: _width,
-              decoration: BoxDecoration(
-                color: _color,
-                borderRadius: _borderRadius,
-                boxShadow: [
-                  BoxShadow(
-                      offset: Offset(0.0, 4.0),
-                      blurRadius: 4,
-                      color: Colors.black26)
-                ],
-              ),
+            child: SampleContainer(
+              mHeight: _height,
+              mWidth: _width,
             ),
           ),
         ),
@@ -55,7 +44,7 @@ class _AnimatedAlignSampleState extends State<AnimatedAlignSample> {
   }
 
   void _changePositionAlignment() {
-    if(_alignment == Alignment.topRight) {
+    if (_alignment == Alignment.topRight) {
       _alignment = Alignment.bottomLeft;
     } else {
       _alignment = Alignment.topRight;
