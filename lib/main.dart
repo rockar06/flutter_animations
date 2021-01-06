@@ -2,8 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animations_app/animations/animated_align_sample.dart';
 import 'package:flutter_animations_app/animations/animated_builder_sample.dart';
 import 'package:flutter_animations_app/animations/animated_container_sample.dart';
+import 'package:flutter_animations_app/animations/animated_cross_fade.dart';
 
-const animationList = ['Curved Animation', 'Animated Align', 'Animated Builder'];
+const animationList = [
+  'Curved Animation',
+  'Animated Align',
+  'Animated Builder',
+  'Animated Cross Fade'
+];
 
 void main() {
   runApp(MyApp());
@@ -66,6 +72,9 @@ class _MyHomePageState extends State<MyHomePage> {
         break;
       case 2:
         nextWidget = AnimatedBuilderSample();
+        break;
+      case 3:
+        nextWidget = AnimatedCrossFadeSample();
         break;
     }
     Navigator.push(
