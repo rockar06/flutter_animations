@@ -3,12 +3,14 @@ import 'package:flutter_animations_app/animations/animated_align_sample.dart';
 import 'package:flutter_animations_app/animations/animated_builder_sample.dart';
 import 'package:flutter_animations_app/animations/animated_container_sample.dart';
 import 'package:flutter_animations_app/animations/animated_cross_fade.dart';
+import 'package:flutter_animations_app/animations/animated_default_text_style_sample.dart';
 
 const animationList = [
   'Curved Animation',
   'Animated Align',
   'Animated Builder',
-  'Animated Cross Fade'
+  'Animated Cross Fade',
+  'Animated Default Text Style'
 ];
 
 void main() {
@@ -75,6 +77,9 @@ class _MyHomePageState extends State<MyHomePage> {
         break;
       case 3:
         nextWidget = AnimatedCrossFadeSample();
+        break;
+      case 4:
+        nextWidget = AnimatedDefaultTextStyleSample();
         break;
     }
     Navigator.push(
