@@ -25,7 +25,7 @@ class AnimatedListExampleState extends State<AnimatedListExample> {
       appBar: AppBar(
         title: Text('Animated List'),
       ),
-      persistentFooterButtons: <Widget>[
+      persistentFooterButtons: [
         RaisedButton(
           color: Colors.green,
           child: Text(

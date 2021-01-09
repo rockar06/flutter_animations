@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class AnimatedDefaultTextStyleSample extends StatefulWidget {
+class AnimatedDefaultTextStyleExample extends StatefulWidget {
   @override
-  _AnimatedDefaultTextStyleSampleState createState() =>
-      _AnimatedDefaultTextStyleSampleState();
+  _AnimatedDefaultTextStyleExampleState createState() =>
+      _AnimatedDefaultTextStyleExampleState();
 }
 
-class _AnimatedDefaultTextStyleSampleState
-    extends State<AnimatedDefaultTextStyleSample> {
+class _AnimatedDefaultTextStyleExampleState
+    extends State<AnimatedDefaultTextStyleExample> {
   bool isBigStyle = false;
 
   @override

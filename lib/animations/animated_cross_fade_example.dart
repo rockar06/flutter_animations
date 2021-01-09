@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class AnimatedCrossFadeSample extends StatefulWidget {
+class AnimatedCrossFadeExample extends StatefulWidget {
   @override
   _AnimatedCrossFadeState createState() => _AnimatedCrossFadeState();
 }
 
-class _AnimatedCrossFadeState extends State<AnimatedCrossFadeSample> {
+class _AnimatedCrossFadeState extends State<AnimatedCrossFadeExample> {
   bool _showFirst = true;
 
   @override

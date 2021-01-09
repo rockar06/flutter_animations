@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animations_app/animations/animated_align_sample.dart';
-import 'package:flutter_animations_app/animations/animated_builder_sample.dart';
-import 'package:flutter_animations_app/animations/animated_container_sample.dart';
-import 'package:flutter_animations_app/animations/animated_cross_fade.dart';
-import 'package:flutter_animations_app/animations/animated_default_text_style_sample.dart';
-import 'package:flutter_animations_app/animations/animated_list_state_sample.dart';
+import 'package:flutter_animations_app/animations/animated_align_example.dart';
+import 'package:flutter_animations_app/animations/animated_builder_example.dart';
+import 'package:flutter_animations_app/animations/animated_container_example.dart';
+import 'package:flutter_animations_app/animations/animated_cross_fade_example.dart';
+import 'package:flutter_animations_app/animations/animated_default_text_style_example.dart';
+import 'package:flutter_animations_app/animations/animated_list_state_example.dart';
 
 const animationList = [
   'Curved Animation',
@@ -69,19 +69,19 @@ class _MyHomePageState extends State<MyHomePage> {
     Widget nextWidget;
     switch (index) {
       case 0:
-        nextWidget = AnimatedContainerSample();
+        nextWidget = AnimatedContainerExample();
         break;
       case 1:
-        nextWidget = AnimatedAlignSample();
+        nextWidget = AnimatedAlignExample();
         break;
       case 2:
-        nextWidget = AnimatedBuilderSample();
+        nextWidget = AnimatedBuilderExample();
         break;
       case 3:
-        nextWidget = AnimatedCrossFadeSample();
+        nextWidget = AnimatedCrossFadeExample();
         break;
       case 4:
-        nextWidget = AnimatedDefaultTextStyleSample();
+        nextWidget = AnimatedDefaultTextStyleExample();
         break;
       case 5:
         nextWidget = AnimatedListExample();

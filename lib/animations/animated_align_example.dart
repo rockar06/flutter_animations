@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animations_app/utils/sample_container.dart';
 
-class AnimatedAlignSample extends StatefulWidget {
+class AnimatedAlignExample extends StatefulWidget {
   @override
-  _AnimatedAlignSampleState createState() => _AnimatedAlignSampleState();
+  _AnimatedAlignExampleState createState() => _AnimatedAlignExampleState();
 }
 
-class _AnimatedAlignSampleState extends State<AnimatedAlignSample> {
+class _AnimatedAlignExampleState extends State<AnimatedAlignExample> {
   final _duration = Duration(milliseconds: 500);
   final double _width = 75;
   final double _height = 75;

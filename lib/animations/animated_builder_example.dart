@@ -3,12 +3,12 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter_animations_app/utils/sample_container.dart';
 
-class AnimatedBuilderSample extends StatefulWidget {
+class AnimatedBuilderExample extends StatefulWidget {
   @override
-  _AnimatedBuilderSampleState createState() => _AnimatedBuilderSampleState();
+  _AnimatedBuilderExampleState createState() => _AnimatedBuilderExampleState();
 }
 
-class _AnimatedBuilderSampleState extends State<AnimatedBuilderSample>
+class _AnimatedBuilderExampleState extends State<AnimatedBuilderExample>
     with SingleTickerProviderStateMixin {
   AnimationController _controller;
   final double _width = 75;
