@@ -6,6 +6,7 @@ import 'package:flutter_animations_app/animations/animated_cross_fade_example.da
 import 'package:flutter_animations_app/animations/animated_default_text_style_example.dart';
 import 'package:flutter_animations_app/animations/animated_list_state_example.dart';
 import 'package:flutter_animations_app/animations/animated_model_barrier_example.dart';
+import 'package:flutter_animations_app/animations/animated_opacity_example.dart';
 
 const animationList = [
   'Curved Animation',
@@ -14,7 +15,8 @@ const animationList = [
   'Animated Cross Fade',
   'Animated Default Text Style',
   'Animated List State',
-  'Animated Model Barrier'
+  'Animated Model Barrier',
+  'Animated Opacity'
 ];
 
 void main() {
@@ -90,6 +92,9 @@ class _MyHomePageState extends State<MyHomePage> {
         break;
       case 6:
         nextWidget = AnimatedModelBarrierExample();
+        break;
+      case 7:
+        nextWidget = AnimatedOpacityExample();
         break;
     }
     Navigator.push(
