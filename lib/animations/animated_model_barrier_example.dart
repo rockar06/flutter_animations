@@ -29,9 +29,18 @@ class _AnimatedModelBarrierExampleState
     );
     _colorTweenAnimation = _colorTween.animate(_animationController);
 
-    _animatedModalBarrier = AnimatedModalBarrier(color: _colorTweenAnimation);
+    _animatedModalBarrier = AnimatedModalBarrier(
+      color: _colorTweenAnimation,
+      dismissible: false,
+    );
 
     super.initState();
+  }
+
+  @override
+  void dispose() {
+    _animationController.dispose();
+    super.dispose();
   }
 
   @override
@@ -97,7 +106,6 @@ class _AnimatedModelBarrierExampleState
     );
   }
 
-  //TODO: Fix crash when pressing the Barrier
   void _setNotLoading() {
     Future.delayed(const Duration(seconds: 5), () {
       setState(() {
