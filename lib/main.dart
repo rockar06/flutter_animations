@@ -7,6 +7,7 @@ import 'package:flutter_animations_app/animations/animated_default_text_style_ex
 import 'package:flutter_animations_app/animations/animated_list_state_example.dart';
 import 'package:flutter_animations_app/animations/animated_model_barrier_example.dart';
 import 'package:flutter_animations_app/animations/animated_opacity_example.dart';
+import 'package:flutter_animations_app/animations/animated_physical_model_example.dart';
 
 const animationList = [
   'Curved Animation',
@@ -16,7 +17,8 @@ const animationList = [
   'Animated Default Text Style',
   'Animated List State',
   'Animated Model Barrier',
-  'Animated Opacity'
+  'Animated Opacity',
+  'Animated Physical Model'
 ];
 
 void main() {
@@ -95,6 +97,9 @@ class _MyHomePageState extends State<MyHomePage> {
         break;
       case 7:
         nextWidget = AnimatedOpacityExample();
+        break;
+      case 8:
+        nextWidget = AnimatedPhysicalModelExample();
         break;
     }
     Navigator.push(
