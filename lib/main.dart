@@ -9,6 +9,7 @@ import 'package:flutter_animations_app/animations/animated_model_barrier_example
 import 'package:flutter_animations_app/animations/animated_opacity_example.dart';
 import 'package:flutter_animations_app/animations/animated_physical_model_example.dart';
 import 'package:flutter_animations_app/animations/animated_positioned_example.dart';
+import 'package:flutter_animations_app/animations/animated_size_example.dart';
 
 const animationList = [
   'Curved Animation',
@@ -20,7 +21,8 @@ const animationList = [
   'Animated Model Barrier',
   'Animated Opacity',
   'Animated Physical Model',
-  'Animated Positioned'
+  'Animated Positioned',
+  'Animated Size'
 ];
 
 void main() {
@@ -105,6 +107,9 @@ class _MyHomePageState extends State<MyHomePage> {
         break;
       case 9:
         nextWidget = AnimatedPositionedExample();
+        break;
+      case 10:
+        nextWidget = AnimatedSizeExample();
         break;
     }
     Navigator.push(
