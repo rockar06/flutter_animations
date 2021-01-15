@@ -8,8 +8,8 @@ class SampleContainer extends StatelessWidget {
 
   const SampleContainer(
       {Key key,
-      this.mHeight,
-      this.mWidth,
+      this.mHeight = 100,
+      this.mWidth = 100,
       this.mColor = Colors.blue,
       this.child})
       : super(key: key);

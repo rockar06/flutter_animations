@@ -10,6 +10,7 @@ import 'package:flutter_animations_app/animations/animated_opacity_example.dart'
 import 'package:flutter_animations_app/animations/animated_physical_model_example.dart';
 import 'package:flutter_animations_app/animations/animated_positioned_example.dart';
 import 'package:flutter_animations_app/animations/animated_size_example.dart';
+import 'package:flutter_animations_app/animations/animated_widget_example.dart';
 
 const animationList = [
   'Curved Animation',
@@ -22,7 +23,8 @@ const animationList = [
   'Animated Opacity',
   'Animated Physical Model',
   'Animated Positioned',
-  'Animated Size'
+  'Animated Size',
+  'Animated Widget'
 ];
 
 void main() {
@@ -110,6 +112,9 @@ class _MyHomePageState extends State<MyHomePage> {
         break;
       case 10:
         nextWidget = AnimatedSizeExample();
+        break;
+      case 11:
+        nextWidget = AnimatedWidgetExample();
         break;
     }
     Navigator.push(
