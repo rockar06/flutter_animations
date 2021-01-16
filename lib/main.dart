@@ -10,6 +10,7 @@ import 'package:flutter_animations_app/animations/animated_opacity_example.dart'
 import 'package:flutter_animations_app/animations/animated_physical_model_example.dart';
 import 'package:flutter_animations_app/animations/animated_positioned_example.dart';
 import 'package:flutter_animations_app/animations/animated_size_example.dart';
+import 'package:flutter_animations_app/animations/animated_widget_base_state_example.dart';
 import 'package:flutter_animations_app/animations/animated_widget_example.dart';
 
 const animationList = [
@@ -24,7 +25,8 @@ const animationList = [
   'Animated Physical Model',
   'Animated Positioned',
   'Animated Size',
-  'Animated Widget'
+  'Animated Widget',
+  'Animated Widget Base State'
 ];
 
 void main() {
@@ -115,6 +117,9 @@ class _MyHomePageState extends State<MyHomePage> {
         break;
       case 11:
         nextWidget = AnimatedWidgetExample();
+        break;
+      case 12:
+        nextWidget = AnimatedWidgetBaseStateExample();
         break;
     }
     Navigator.push(
