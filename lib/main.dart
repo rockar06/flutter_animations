@@ -13,6 +13,7 @@ import 'package:flutter_animations_app/animations/animated_size_example.dart';
 import 'package:flutter_animations_app/animations/animated_widget_base_state_example.dart';
 import 'package:flutter_animations_app/animations/animated_widget_example.dart';
 import 'package:flutter_animations_app/animations/decorated_box_transition_example.dart';
+import 'package:flutter_animations_app/animations/fade_transition_example.dart';
 
 const animationList = [
   'Curved Animation',
@@ -28,7 +29,8 @@ const animationList = [
   'Animated Size',
   'Animated Widget',
   'Animated Widget Base State',
-  'Decorated Box Transition'
+  'Decorated Box Transition',
+  'Fade Transition'
 ];
 
 void main() {
@@ -125,6 +127,9 @@ class _MyHomePageState extends State<MyHomePage> {
         break;
       case 13:
         nextWidget = DecoratedBoxTransitionExample();
+        break;
+      case 14:
+        nextWidget = FadeTransitionExample();
         break;
     }
     Navigator.push(
