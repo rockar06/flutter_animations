@@ -18,6 +18,7 @@ import 'package:flutter_animations_app/animations/positioned_transition_example.
 import 'package:flutter_animations_app/animations/rotation_transition_example.dart';
 import 'package:flutter_animations_app/animations/scale_transition_example.dart';
 import 'package:flutter_animations_app/animations/size_transition_example.dart';
+import 'package:flutter_animations_app/animations/slide_transition_example.dart';
 
 import 'animations/hero_widget_example.dart';
 
@@ -41,7 +42,8 @@ const animationList = [
   'Positioned Transition',
   'Rotation Transition',
   'Scale Transition',
-  'Size Transition'
+  'Size Transition',
+  'Slide Transition'
 ];
 
 void main() {
@@ -156,6 +158,9 @@ class _MyHomePageState extends State<MyHomePage> {
         break;
       case 19:
         nextWidget = SizeTransitionExample();
+        break;
+      case 20:
+        nextWidget = SlideTransitionExample();
         break;
     }
     Navigator.push(
