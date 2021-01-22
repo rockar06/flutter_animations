@@ -9,4 +9,4 @@ page, were you will find documentation of the usage of each widget used in this 
 
 ### Curved Animation
 
-[<img src="curved_animation.gif" width="250"/>](/gifs/curved_animation.gif)
+[<img src="/gifs/curved_animation.gif" width="250"/>](/gifs/curved_animation.gif)
