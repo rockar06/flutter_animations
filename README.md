@@ -10,3 +10,15 @@ page, were you will find documentation of the usage of each widget used in this 
 ### Curved Animation
 
 [<img src="/gifs/curved_animation.gif" width="250"/>](/gifs/curved_animation.gif)
+
+### Animated Physical Model
+
+[<img src="/gifs/animated_physical_model.gif" width="250"/>](/gifs/animated_physical_model.gif)
+
+### Animated Widget Base State
+
+[<img src="/gifs/animated_widget_base_state.gif" width="250"/>](/gifs/animated_widget_base_state.gif)
+
+### Hero Widget
+
+[<img src="/gifs/hero_widget.gif" width="250"/>](/gifs/hero_widget.gif)
