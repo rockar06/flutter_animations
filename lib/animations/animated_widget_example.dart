@@ -14,7 +14,10 @@ class _AnimatedWidgetExampleState extends State<AnimatedWidgetExample>
 
   @override
   void initState() {
-    _controller = AnimationController(vsync: this);
+    _controller = AnimationController(
+      duration: const Duration(seconds: 2),
+      vsync: this,
+    );
     super.initState();
   }
 
@@ -38,7 +41,7 @@ class _AnimatedWidgetExampleState extends State<AnimatedWidgetExample>
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _changeAnimationState,
-        child: Icon(isAnimating ? Icons.stop : Icons.play_arrow),
+        child: Icon(Icons.play_arrow),
       ),
     );
   }
@@ -47,9 +50,9 @@ class _AnimatedWidgetExampleState extends State<AnimatedWidgetExample>
     setState(() {
       isAnimating = !isAnimating;
       if (isAnimating) {
-        _controller.repeat();
+        _controller.forward();
       } else {
-        _controller.stop();
+        _controller.reverse();
       }
     });
   }
