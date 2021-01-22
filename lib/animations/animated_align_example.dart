@@ -16,7 +16,7 @@ class _AnimatedAlignExampleState extends State<AnimatedAlignExample> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Curved Animation'),
+        title: Text('Animated Align'),
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: 50, horizontal: 50),

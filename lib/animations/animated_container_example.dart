@@ -20,7 +20,7 @@ class _AnimatedContainerExampleState extends State<AnimatedContainerExample> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Curved Animation'),
+        title: Text('Animated Container'),
       ),
       body: Center(
         child: AnimatedContainer(

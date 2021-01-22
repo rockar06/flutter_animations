@@ -12,7 +12,7 @@ class _AnimatedCrossFadeState extends State<AnimatedCrossFadeExample> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Curved Animation'),
+        title: Text('Animated Cross Fade'),
       ),
       body: Center(
         child: AnimatedCrossFade(

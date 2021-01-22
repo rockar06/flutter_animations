@@ -14,7 +14,7 @@ class _AnimatedDefaultTextStyleExampleState
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Curved Animation'),
+        title: Text('Animated Default Text Style'),
       ),
       body: Center(
         child: Column(

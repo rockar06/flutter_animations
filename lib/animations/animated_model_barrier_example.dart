@@ -48,7 +48,7 @@ class _AnimatedModelBarrierExampleState
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
-        title: Text('AnimatedBuilder Sample'),
+        title: Text('Animated Model Barrier'),
       ),
       body: Center(
         child: Container(

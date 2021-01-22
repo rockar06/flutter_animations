@@ -23,7 +23,7 @@ import 'package:flutter_animations_app/animations/slide_transition_example.dart'
 import 'animations/hero_widget_example.dart';
 
 const animationList = [
-  'Curved Animation',
+  'Animated Container',
   'Animated Align',
   'Animated Builder',
   'Animated Cross Fade',

@@ -16,7 +16,7 @@ class _AnimatedPhysicalModelExampleState
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Animated Opacity'),
+        title: const Text('Animated Physical Model'),
       ),
       body: Center(
         child: AnimatedPhysicalModel(
