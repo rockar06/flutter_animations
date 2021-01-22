@@ -14,6 +14,7 @@ import 'package:flutter_animations_app/animations/animated_widget_base_state_exa
 import 'package:flutter_animations_app/animations/animated_widget_example.dart';
 import 'package:flutter_animations_app/animations/decorated_box_transition_example.dart';
 import 'package:flutter_animations_app/animations/fade_transition_example.dart';
+import 'package:flutter_animations_app/animations/positioned_transition_example.dart';
 
 import 'animations/hero_widget_example.dart';
 
@@ -33,7 +34,8 @@ const animationList = [
   'Animated Widget Base State',
   'Decorated Box Transition',
   'Fade Transition',
-  'Hero'
+  'Hero',
+  'Positioned Transition'
 ];
 
 void main() {
@@ -136,6 +138,9 @@ class _MyHomePageState extends State<MyHomePage> {
         break;
       case 15:
         nextWidget = HeroWidgetExample();
+        break;
+      case 16:
+        nextWidget = PositionedTransitionExample();
         break;
     }
     Navigator.push(
