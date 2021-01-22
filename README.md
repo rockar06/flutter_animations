@@ -1,16 +1,12 @@
-# flutter_animations_app
+# Flutter Animations App
 
-A new Flutter application.
+A Flutter application where are used 20 of the most common animations in Flutters Framework.
 
-## Getting Started
+For more info, you can refer to [Animation and motion widgets](https://flutter.dev/docs/development/ui/widgets/animation) 
+page, were you will find documentation of the usage of each widget used in this sample app.
 
-This project is a starting point for a Flutter application.
+## Example of used animations
 
-A few resources to get you started if this is your first Flutter project:
+### Curved Animation
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![curved_animation](/gifs/curved_animation.gif =350×480)
