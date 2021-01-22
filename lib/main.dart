@@ -16,6 +16,7 @@ import 'package:flutter_animations_app/animations/decorated_box_transition_examp
 import 'package:flutter_animations_app/animations/fade_transition_example.dart';
 import 'package:flutter_animations_app/animations/positioned_transition_example.dart';
 import 'package:flutter_animations_app/animations/rotation_transition_example.dart';
+import 'package:flutter_animations_app/animations/scale_transition_example.dart';
 
 import 'animations/hero_widget_example.dart';
 
@@ -37,7 +38,8 @@ const animationList = [
   'Fade Transition',
   'Hero',
   'Positioned Transition',
-  'Rotation Transition'
+  'Rotation Transition',
+  'Scale Transition'
 ];
 
 void main() {
@@ -146,6 +148,9 @@ class _MyHomePageState extends State<MyHomePage> {
         break;
       case 17:
         nextWidget = RotationTransitionExample();
+        break;
+      case 18:
+        nextWidget = ScaleTransitionExample();
         break;
     }
     Navigator.push(
